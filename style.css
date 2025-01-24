@@ -2,37 +2,36 @@
 
 body{
     background-color: black;
-    margin: 0px;
+    margin: 0em;
 }
-h1{
-    color: white;
-    text-align: left;
-    margin: 20px;
-    font-family: "Ruda", serif;
-    font-size: 80px;
-    font-weight: 5;
-    font-style: normal;
-}
-.navbar ul{
-    list-style-type: none; /* to remove points/dots beside the hyperlinks */
-    text-align: right;
+.navbar{
     background-color: #232323;
-    padding: 0px;
-    margin: 20px;
-    overflow: hidden;
+    font-family: "Ruda", serif;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.navbar a{
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 50px;
+    font-weight: 600;
     color: white;
     text-decoration: none; /* to remove underlines at the hyperlinks */
-    padding: 10px;
-    font-family: "Ruda", serif;
-    font-size: 25px;
-    font-style: normal;
 }
-.navbar a:hover{
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a:hover{
     background-color: #363737;
 }
-.navbar li{
-    float:right;
-    
+li a{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+    color: white;
+    text-decoration: none; /* to remove underlines at the hyperlinks */
 }
