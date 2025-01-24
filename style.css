@@ -1,14 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Ruda:wght@600&display=swap');
 
-#a1{
-    text-align: center;
-}
 body{
     background-color: black;
+}
+h1{
     color: white;
+    text-align: center;
+    font-family: "Lilita One", serif;
+    font-weight: 500;
+    font-style: normal;
 }
-#ygC{
-    color: yellowgreen;
+.navbar ul{
+    list-style-type: none; /* to remove points/dots beside the hyperlinks */
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 }
-#skyC{
-    color: skyblue;
+.navbar a{
+    color: white;
+    text-decoration: none; /* to remove underlines at the hyperlinks */
+    padding: 10px;
+    font-family: "Lilita One", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.navbar li{
+    float:left;
 }
