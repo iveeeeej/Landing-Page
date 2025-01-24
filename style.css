@@ -5,15 +5,17 @@ body{
 }
 h1{
     color: white;
-    text-align: center;
+    text-align: left;
+    margin: 20px;
     font-family: "Lilita One", serif;
-    font-weight: 500;
+    font-size: 80px;
+    font-weight: 5;
     font-style: normal;
 }
 .navbar ul{
     list-style-type: none; /* to remove points/dots beside the hyperlinks */
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
     overflow: hidden;
 }
 .navbar a{
@@ -25,5 +27,6 @@ h1{
     font-style: normal;
 }
 .navbar li{
-    float:left;
+    float:right;
+    
 }
