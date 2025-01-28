@@ -5,20 +5,21 @@ body{
     margin: 0em;
 }
 .navbar{
-    background-color: #232323;
+    background-color: white;
     font-family: "Ruda", serif;
     padding-right: 15px;
     padding-left: 15px;
 }
 .navdiv{
     display: flex;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
 }
 .logo a{
-    font-size: 50px;
-    font-weight: 600;
-    color: white;
+    font-size: 30px;
+    margin: 2em;
+    color: #232323;
     text-decoration: none; /* to remove underlines at the hyperlinks */
 }
 li{
@@ -26,12 +27,22 @@ li{
     display: inline-block;
 }
 li a:hover{
-    background-color: #363737;
+    background-color: #cecece;
 }
 li a{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     margin-right: 25px;
-    color: white;
+    color: #232323;
     text-decoration: none; /* to remove underlines at the hyperlinks */
+}
+.about{
+    text-align: center;
+    margin-top: 15em;
+    font-family: "Ruda", serif;
+    font-size: 20px;
+    color: white;
+
+}
+.about_back{
+    border-radius: 50px;
 }
