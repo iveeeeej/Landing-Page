@@ -95,3 +95,11 @@ li a{
     left: 300px;
     font-size: 40px;
 }
+.formdiv{
+    align-content: center;
+}
+#logbutton{
+    background-color: #232323;
+    border: none;
+    border-radius: 0;
+}
