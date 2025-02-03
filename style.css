@@ -9,7 +9,7 @@
 .navbar{
     background-color: white;
     padding-right: 15px;
-    padding-left: 15px;
+
 }
 .navdiv{
     display: flex;
@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .logo a{
-    margin: 1em;
+    margin-left: 50px;
     color: #232323;
     font-family: "Anton", serif;
     font-size: 40px;
