@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Ruda:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Lilita+One&family=Ruda:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-body{
+.homebod{
     background-color: white;
     margin: 0em;
 }
@@ -9,26 +10,24 @@ body{
     background-color: white;
     padding-right: 15px;
     padding-left: 15px;
-    font-family: "Ruda", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
 }
 .navdiv{
     display: flex;
-    height: 60px;
+    height: 75px;
     align-items: center;
     justify-content: space-between;
 }
 .logo a{
     margin: 1em;
     color: #232323;
-    font-size: 35px;
+    font-family: "Anton", serif;
+    font-size: 40px;
+    font-optical-sizing: auto;
     text-decoration: none; /* to remove underlines at the hyperlinks */
 }
 li{
-    list-style: none;
-    display: inline-block;
+    display: inline-block; /*to make the list display horizontally*/
+    list-style: none; /* to remove points/dots beside the hyperlinks */
 }
 li a:hover{
     background-color: #e8e8e8;
@@ -36,24 +35,26 @@ li a:hover{
 li a{
     margin-right: 25px;
     color: #232323;
+    font-family: "Ruda", serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
     text-decoration: none; /* to remove underlines at the hyperlinks */
-    /*list-style-type: none;*/ /* to remove points/dots beside the hyperlinks */
+    
 }
 .middle{
     background-color: black;
     height: 350px;
     width: 100%;
     position: absolute;
-    top:auto;
+    top: auto;
 }
 .middle_text{
     font-family: "Anta", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 100px;
     color: white;
     margin-left: 80px;
 }
+/*ABOUT*/
 .about{
     text-align: center;
     margin-top: 10em;
@@ -61,40 +62,29 @@ li a{
     font-size: 25px;
     color: black;
 }
-.middle5{
+/*BLOG*/
+.blogbod{
     background-color: black;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:auto;
-    color: white;
+    margin: 0em;
 }
-.beluga{
-    position: absolute;
-    top: 5em;
-    left: 5em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 8px;
-    width: 533px;
+.headblog{
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Anton", serif;
+    font-size: 80px;
+    color: #ad011d;
 }
-.text5{
-    position: absolute;
-    top: 120px;
-    right: 800px;
-    font-size: 20px;
+.beludiv{
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
 }
-.rickroll{
-    position: absolute;
-    top: 25em;
-    right: 5em;
+.nikadiv{
+    float: right;
+    margin-top: 450px;
+    margin-right: 50px;
 }
-.text5_2{
-    position: absolute;
-    top: 600px;
-    left: 300px;
-    font-size: 40px;
-}
+/*FORM*/
 .formdiv{
     align-content: center;
 }
