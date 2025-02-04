@@ -64,19 +64,18 @@ li a{
 }
 /*BLOG*/
 .blogbod{
-    background-color: black;
+    background-color: white;
     margin: 0em;
 }
 .headblog{
     margin-top: 100px;
     text-align: center;
-    font-family: "Anton", serif;
-    font-size: 80px;
+    font-family: "Anta", serif;
+    font-size: 150px;
     color: #ad011d;
 }
 .beludiv{
     float: left;
-    margin-top: 50px;
     margin-left: 50px;
 }
 .nikadiv{
