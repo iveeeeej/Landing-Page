@@ -13,7 +13,7 @@
 }
 .navdiv{
     display: flex;
-    height: 75px;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
 }
@@ -38,15 +38,15 @@ li a{
     font-family: "Ruda", serif;
     font-size: 20px;
     font-optical-sizing: auto;
-    text-decoration: none; /* to remove underlines at the hyperlinks */
-    
+    text-decoration: none; /* to remove underlines at the hyperlinks */  
 }
 .middle{
+    margin-top: auto;
     background-color: black;
     height: 350px;
     width: 100%;
     position: absolute;
-    top: auto;
+    
 }
 .middle_text{
     font-family: "Anta", serif;
@@ -63,32 +63,37 @@ li a{
     color: black;
 }
 /*BLOG*/
-.blogbod{
+.blog_body{
     background-color: white;
     margin: 0em;
 }
-.headblog{
-    margin-top: 100px;
+.header_blog{
+    position: relative;
     text-align: center;
-    font-family: "Anta", serif;
-    font-size: 150px;
-    color: #ad011d;
 }
-.beludiv{
-    float: left;
-    margin-left: 50px;
+.top-left{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-family: "Anton", serif;
+    font-size: 20em;
+    color: white;
 }
-.nikadiv{
-    float: right;
-    margin-top: 450px;
-    margin-right: 50px;
+#blog_text1{
+    text-align: center;
+    font-size: 50px;
 }
 /*FORM*/
+
 .formdiv{
-    align-content: center;
-}
-#logbutton{
     background-color: #232323;
-    border: none;
-    border-radius: 0;
+    
+}
+.formhead{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.formfill{
+    
 }
