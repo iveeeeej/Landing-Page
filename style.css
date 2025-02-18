@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.homebod{
+.home_body{
     background-color: white;
     margin: 0em;
 }
@@ -105,34 +105,66 @@ li a{
     line-height: 1.5;
 }
 /*FORM*/
-.outer_div{
+.logform_body{
+    background-color: white;
+}
+.log_container{
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 8%;
+}
+.tag{
+    margin-top: 160px;
+    height: 100px;
+    width: 40px;
+    background-color: crimson;
+}
+.logdiv{
+    margin-top: 25px;
+    background-color: black;
+    height: 400px;
+    width: 30%;
+    color: white;
+    overflow: hidden;
+}
+#log_header{
+    margin-top: 30px;
+    margin-left: 60px;
+    font-family: "Anton", serif;
+    font-size: 100px;
+    font-weight: normal;
+    letter-spacing: 5.5px;
+}
+#log_text{
+    font-family: "Ruda", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2;
+    margin-top: -30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
 }
 .formdiv{
-    background-color: black;
+    background-color: white;
     border: 1px solid black;
-    height: 550px;
-    width: 25%;
-    color: white;
+    box-sizing: border-box;
+    height: 450px;
+    width: 30%;
+    color: black;
     overflow: hidden;
 }
 form{
     display: block;
     box-sizing: border-box;
-    padding: 30px 50px 30px 50px;
+    margin-top: 30px;
+    padding: 30px 60px 30px 60px;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-#log_header{
-    font-family: "Ruda", serif;
-    font-size: 300%;
-    margin-top: 0;
-    margin-bottom: 5%;
 }
 label{
     font-family: "Ruda", serif;
@@ -146,12 +178,12 @@ input{
     padding: 0px 20px;
     border: none;
     margin-bottom: 5%;
-    color: white;
+    color: black;
     font-size: 100%;
 }
 button{
     background-color: tomato;
-    margin-top: 8%  ;
+    margin-top: 5%  ;
     border: 0;
     border-radius: 25px;
     padding: 5px;
@@ -161,9 +193,14 @@ button{
     color: white;
     font-weight: bold;
 }
-form a{
+form p{
     text-align: center;
-    text-decoration: none;
-    color: white;
+    font-family: "Ruda", serif;
+    color: black;
+    margin-top: 5%;
+}
+form a{
+    font-family: "Ruda", serif;
+    color: black;
     margin-top: 5%;
 }
