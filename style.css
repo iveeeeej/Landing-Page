@@ -37,7 +37,7 @@ li a{
     margin-right: 25px;
     color: #232323;
     font-family: "Ruda", serif;
-    font-size: 25px;
+    font-size: 20px;
     font-optical-sizing: auto;
     text-decoration: none; /* to remove underlines at the hyperlinks */  
 }
@@ -55,6 +55,10 @@ li a{
     margin-left: 80px;
 }
 /*ABOUT*/
+.about_body{
+    background-color: white;
+    margin: 0px;
+}
 .about{
     text-align: center;
     margin-top: 10em;
@@ -62,51 +66,41 @@ li a{
     font-size: 25px;
     color: black;
 }
+/*SERVICES*/
+.services_body{
+    background-color: white;
+    margin: 0px;
+}
+/*PAGES*/
+.pages_body{
+    background-color: white;
+    margin: 0px;
+}
 /*BLOG*/
 .blog_body{
     background-color: white;
-    margin: 0em;
+    margin: 0px;
 }
-.header_blog{
-    position: relative;
-}
-.top-left{
-    position: absolute;
-    top: 3%;
-    left: 5%;
+#blog_header{
+    text-align: center;
+    color: #232323;
     font-family: "Anton", serif;
-    font-size: 25em;
-    color: white;
-}
-#blog_text1{
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "League Spartan", serif;
+    font-size: 100px;
+    font-weight: normal;
     font-optical-sizing: auto;
-    font-weight: 10px;
-    font-size: 50px;
-    text-align: justify;
-    text-indent: 8%;
-    line-height: 1.5;
 }
-.img1{
-    float: left;
-    margin-left: 3%;
+.img{
+
 }
-#blog_text2{
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "League Spartan", serif;
-    font-optical-sizing: auto;
-    font-weight: 10px;
-    font-size: 50px;
-    text-align: justify;
-    text-indent: 8%;
-    line-height: 1.5;
+/*CONTACTS*/
+.contacts_body{
+    background-color: white;
+    margin: 0px;
 }
 /*FORM*/
 .logform_body{
     background-color: white;
+    margin: 0px;
 }
 .log_container{
     display: flex;
