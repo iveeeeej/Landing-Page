@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Lilita+One&family=Ruda:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin: 0;
@@ -9,43 +11,42 @@
     box-sizing: border-box;
 }
 body{
+    padding-top: 80px;
     background-color: white;
     min-height: 100vh;
 }
 .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensure full width */
     background-color: white;
-    padding-right: 15px;
+    z-index: 1000;  /* Ensure it stays above other content */
 }
-
 .navdiv {
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo a {
     margin-left: 50px;
     color: #232323;
     font-family: "Anton", serif;
     font-size: 2.8rem;
     font-optical-sizing: auto;
-    text-decoration: none; /* to remove underlines at the hyperlinks */
+    text-decoration: none;
 }
-
 ul {
     position: relative;
     padding: 0;
     margin: 0;
 }
-
 li {
-    display: inline-block; /* Display horizontally */
+    display: inline-block;
     list-style: none;
-    position: relative; /* Needed for positioning */
+    position: relative;
 }
-
 li a {
     position: relative;
     z-index: 1;
@@ -56,54 +57,50 @@ li a {
     font-size: 1.25rem;
     text-decoration: none;
 }
-
 .navbar .navdiv .animation {
     position: absolute;
-    height: 5px; /* Adjust this for desired thickness */
+    height: 5px;
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to right, #c51d50, #c51d42, #c51d34);
     transition: all 0.3s ease-in-out;
 }
-
 .navbar ul li:nth-child(1):hover ~ .animation {
     width: 100px;
     left: 0.5;
 }
-
 .navbar ul li:nth-child(2):hover ~ .animation {
     width: 100px;
     left: 110.5px;
 }
-
 .navbar ul li:nth-child(3):hover ~ .animation {
     width: 100px;
     left: 237px;
 }
-
 .navbar ul li:nth-child(4):hover ~ .animation {
     width: 100px;
     left: 360.5px;
 }
-
 .navbar ul li:nth-child(5):hover ~ .animation {
     width: 100px;
     left: 465px;
 }
-
 .navbar ul li:nth-child(6):hover ~ .animation {
     width: 100px;
     left: 583px;
 }
+main{
+    background-color: black;
+}
 .container{
     margin-top: auto;
     padding: 20px;
-    background-image: linear-gradient(to right, #010101, #121214);
+    background-image: linear-gradient(to right, #010101, #121214, #202020);
     min-height: 100vh;
     width: 100%;
 }
 .inner-container{
-    padding: 80px;
+    padding: 100px;
 }
 .container .text h1{
     font-family: "Anta", serif;
@@ -129,7 +126,7 @@ li a {
     text-transform: uppercase;
     font-family: "Anton", serif;
     color: #c51d34;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
@@ -160,154 +157,89 @@ li a {
     transform: scale(0.9);
 }
 .inner-container-2{
-    margin: 80px;
+    margin: 50px;
+    padding-left: 60px;
 }
 .inner-container-2 p{
     color: white;
     font-family: "Ruda", serif;
     font-size: 1.5rem;
 }
-
-/*
-ABOUT
-.about_body{
-    background-color: white;
-    margin: 0px;
-}
-.about{
-    text-align: center;
-    margin-top: 10em;
-    font-family: "Ruda", serif;
-    font-size: 25px;
-    color: black;
-}
-/*SERVICES
-.services_body{
-    background-color: white;
-    margin: 0px;
-}
-/*PAGES
-.pages_body{
-    background-color: white;
-    margin: 0px;
-}
-/*BLOG
-.blog_body{
-    background-color: white;
-    margin: 0px;
-}
-#blog_header{
-    text-align: center;
-    color: #232323;
-    font-family: "Anton", serif;
-    font-size: 100px;
-    font-weight: normal;
-    font-optical-sizing: auto;
-}
-/*CONTACTS
-.contacts_body{
-    background-color: white;
-    margin: 0px;
-}
-/*FORM
-.logform_body{
-    background-color: white;
-    margin: 0px;
-}
-.log_container{
+.blog-container{
+    background-color: #202020;
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    align-items: center;
+    min-height: 100vh;
 }
-.tag{
-    margin-top: 175px;
-    height: 100px;
-    width: 40px;
-    background-color: crimson;
-}
-.logdiv{
-    margin-top: 25px;
-    background-color: black;
-    height: 400px;
-    width: 30%;
-    color: white;
-    overflow: hidden;
-}
-#log_header{
-    margin-top: 30px;
-    margin-left: 60px;
-    font-family: "Anton", serif;
-    font-size: 100px;
-    font-weight: normal;
-    letter-spacing: 5.5px;
-}
-#log_text{
-    font-family: "Ruda", serif;
-    font-optical-sizing: auto;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 2;
-    margin-top: -30px;
-    padding-left: 60px;
-    padding-right: 60px;
-
-}
-.formdiv{
-    background-color: white;
-    border: 1px solid black;
-    box-sizing: border-box;
-    height: 450px;
-    width: 30%;
-    color: black;
-    overflow: hidden;
-}
-form{
-    display: block;
-    box-sizing: border-box;
-    margin-top: 30px;
-    padding: 30px 60px 30px 60px;
-    height: 100%;
+.blog-outer-container{
+    position: relative;
     width: 100%;
+    max-width: 1900px;
+    min-height: 850px;
+    margin: 50px;
+    background-color: #121214;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+}
+.blog-inner-container-1{
+    position: relative;
+    background-color: #121214;
+    padding: 2rem;
+}
+.profile_text{
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
 }
-label{
-    font-family: "Ruda", serif;
-    margin-left: 5%;
-    font-size: 125%;
+.profile_text .imgbox{
+    margin-top: 10%;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                radial-gradient(circle, #8800c7, #c51d42, #c51d34) border-box;
 }
-input{
-    background: rgba(225, 225, 225, 0.5);
-    height: 10%;
-    border-radius: 20px;
-    padding: 0px 20px;
-    border: none;
-    margin-bottom: 5%;
-    color: black;
-    font-size: 100%;
+.profile_text .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-button{
-    background-color: #00B4D8;
-    margin-top: 5%  ;
-    border: 0;
-    border-radius: 25px;
-    padding: 5px;
-    height: 12%;
-    font-family: "Ruda", serif;
-    font-size: 150%;
-    color: white;
-    font-weight: bold;
-}
-form p{
+.profile_text h2{
+    color: #fff;
+    font-size: 5em;
+    margin-top: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
     text-align: center;
-    font-family: "Ruda", serif;
-    color: black;
-    margin-top: 5%;
+    font-weight: 400;
+    line-height: 1em;
 }
-form a{
-    font-family: "Ruda", serif;
-    color: black;
-    margin-top: 5%;
+.profile_text h2 span{
+    font-family: "Oxanium", sans-serif;
+    font-size: 0.5em;
+    font-weight: 300;
 }
-*/
+.blog-inner-container-2{
+    position: relative;
+    background-color: #121214;
+    padding: 5rem;
+}
+.blog-inner-container-2 p{
+    margin-top: 10%;
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+    font-size: 2rem;
+    text-indent: 2.5em;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}

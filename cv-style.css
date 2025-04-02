@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+body{
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    margin-top: -50px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left{
+    position: relative;
+    background-color: #2E2E30;
+    padding: 2rem;
+}
+.profile_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+.profile_text .imgbox{
+    margin-top: 10%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile_text .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile_text h2{
+    color: #fff;
+    font-size: 3em;
+    margin-top: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1em;
+}
+.profile_text .vnm{
+    font-size: 2.9em;
+}
+.profile_text h2 span{
+    font-family: "Oxanium", sans-serif;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+.contact_info{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact_info ul{
+    position: relative;
+    padding-bottom: 25px;
+}
+.contact_info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact_info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #266CA9;
+}
+.contact_info ul li span{
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.language{
+    padding-top: 30px;
+}
+.language ul{
+    position: relative;
+}
+.language ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.language ul li span{
+    color: #fff;
+    font-family: "Oxanium", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+.container .right{
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 2rem;
+}
+.about{
+    margin-bottom: 40px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #266CA9;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .obj{
+    font-family: "Oxanium", sans-serif;
+    color: #333;
+    line-height: 1.8;
+    text-indent: 2.8em;
+    text-align: justify;
+}
+.about .obj .nm{
+    font-weight: bolder;
+}
+.about .a-box{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+.about .a-box .info-a{
+    min-width: 130px;
+}
+.about .a-box .info-a h4{
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about .a-box .info-b{
+    min-width: 180px;
+    padding-right: 20px;
+}
+.about .a-box .info-b h5{
+    font-family: "Oxanium", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .s_yr{
+    min-width: 150px;
+}
+.about .box .s_yr h4{
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about .box .lvl-s_loc{
+    min-width: 220px;
+}
+.about .box .lvl-s_loc h3{
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-right: 70px;
+}
+.about .box .lvl-s_loc p{
+    font-family: "Oxanium", sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+.about .box .strand h4{
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.about .exp{
+    font-family: "Oxanium", sans-serif;
+}
