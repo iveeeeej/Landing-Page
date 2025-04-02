@@ -15,13 +15,14 @@ body{
     background-color: white;
     min-height: 100vh;
 }
+/*Navigation Bar*/
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;  /* Ensure full width */
+    width: 100%;
     background-color: white;
-    z-index: 1000;  /* Ensure it stays above other content */
+    z-index: 1000;
 }
 .navdiv {
     display: flex;
@@ -92,6 +93,7 @@ li a {
 main{
     background-color: black;
 }
+/*Main Content*/
 .container{
     margin-top: auto;
     padding: 20px;
@@ -165,14 +167,15 @@ main{
     font-family: "Ruda", serif;
     font-size: 1.5rem;
 }
-.blog-container{
+/*About Content*/
+.about-container{
     background-color: #202020;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.blog-outer-container{
+.about-outer-container{
     position: relative;
     width: 100%;
     max-width: 1900px;
@@ -183,7 +186,7 @@ main{
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,1);
 }
-.blog-inner-container-1{
+.about-inner-container-1{
     position: relative;
     background-color: #121214;
     padding: 2rem;
@@ -228,18 +231,22 @@ main{
     font-size: 0.5em;
     font-weight: 300;
 }
-.blog-inner-container-2{
+.about-inner-container-2{
     position: relative;
     background-color: #121214;
-    padding: 5rem;
+    padding: 3rem;
 }
-.blog-inner-container-2 p{
-    margin-top: 10%;
+.about-inner-container-2 p{
+    margin-top: 2em;
     color: #fff;
     font-family: "Oxanium", sans-serif;
     font-size: 2rem;
     text-indent: 2.5em;
     text-align: justify;
     letter-spacing: 2px;
-    line-height: 1.5;
+    line-height: 2;
+}
+.services-container{
+    background-color: #202020;
+    min-height: 100vh;
 }
